@@ -4,6 +4,13 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
 header {
     background-color: black;
     width: 100%;
@@ -17,6 +24,8 @@ header img {
 section {
     max-width: 900px;
     min-height: 300px;
+    align-self: center;
+    width: 100%;
 }
 
 #contenedor-saludo {
@@ -43,19 +52,23 @@ section {
 }
 
 #contenedor-descripcion {
+    background-color: white;
+    color: black;
+    padding: 30px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-}
-
-#contenedor-descripcion .contenido {
+    justify-content: center;
+  }
+  
+  #contenedor-descripcion .contenido{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-#contenedor-descripcion img {
-    height: auto;
+  }
+  
+  #contenedor-descripcion img {
     width: 30vw;
-}
+    height: auto;
+    border-radius: 10px;
+    margin: 30px;
+  }
